@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="players">
+		<div class='p1'>
+			<label>Player 1: </label>
+			<input type="text" id="p1Name">
+			<button id='checkUser' onclick="checkUser('p1Name')">Enter</button>
+			<label>Score:</label><div id='p1Score'></div>
+		</div>
+		&nbsp;&nbsp;&nbsp;
+		<div class='p2'>
+			<label>Player 2: </label>
+			<input type="text" id="p2Name">
+			<button id='checkUser' onclick="checkUser('p2Name')">Enter</button>
+			<label>Score:</label><div id='p2Score'></div>
+		</div>
+	</div>
+	<div class="board" id="board">
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+	</div>
+	<div class="winning-message" id="winningMessage">
+		<div data-winning-message-text></div>
+		<button id="restartButton">Restart</button>
+	</div>
+</body>
+</html>
